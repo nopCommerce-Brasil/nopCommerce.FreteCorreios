@@ -1,0 +1,9 @@
+﻿Group: Cálculo de Frete
+FriendlyName: Frete Correios
+SystemName: Shipping.FreteCorreios
+Version: 1.0
+SupportedVersions: 3.80
+Author: nopCommerce-Brasil
+DisplayOrder: 0
+FileName: Nop.Plugin.Shipping.FreteCorreios.dll
+Description: Plugin para cálculo de frete com base nas taxas do Correios - www.github.com/orgs/nopCommerce-Brasil
