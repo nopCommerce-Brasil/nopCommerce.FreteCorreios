@@ -10,7 +10,7 @@ using System.Web.Routing;
 
 namespace Nop.Plugin.Shipping.FreteCorreios
 {
-    class FreteCorreiosShippingComputationMethod : BasePlugin, IShippingRateComputationMethod
+    public class FreteCorreiosShippingComputationMethod : BasePlugin, IShippingRateComputationMethod
     {
         public ShippingRateComputationMethodType ShippingRateComputationMethodType
         {

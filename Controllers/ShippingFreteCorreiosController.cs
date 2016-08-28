@@ -30,17 +30,17 @@ namespace Nop.Plugin.Shipping.FreteCorreios.Controllers
         {
             var model = new FreteCorreiosModel
             {
-                CodigoEmpresa = _FreteCorreiosSettings.CodigoEmpresa,
-                Senha = _FreteCorreiosSettings.Senha,
-                Url = _FreteCorreiosSettings.Url,
+                CodigoEmpresa       = _FreteCorreiosSettings.CodigoEmpresa,
+                Senha               = _FreteCorreiosSettings.Senha,
+                Url                 = _FreteCorreiosSettings.Url,
                 CustoAdicionalEnvio = _FreteCorreiosSettings.CustoAdicionalEnvio,
                 IncluirValorDeclarado = _FreteCorreiosSettings.IncluirValorDeclarado,
-                UtilizaValorMinimo = _FreteCorreiosSettings.UtilizaValorMinimo,
-                ValorMinimo = _FreteCorreiosSettings.ValorMinimo,
+                UtilizaValorMinimo  = _FreteCorreiosSettings.UtilizaValorMinimo,
+                ValorMinimo         = _FreteCorreiosSettings.ValorMinimo,
                 DiasUteisAdicionais = _FreteCorreiosSettings.DiasUteisAdicionais
             };
 
-            return View("~/Plugin.Shipping.FreteCorreios/View/FreteCorreios/Configure.cshtml", model);
+            return View("~/Plugin.Shipping.FreteCorreios/Views/ShippingFreteCorreios/Configure.cshtml", model);
         }
 
         [HttpPost]
@@ -55,7 +55,7 @@ namespace Nop.Plugin.Shipping.FreteCorreios.Controllers
             _FreteCorreiosSettings.Senha                = model.Senha;
             _FreteCorreiosSettings.Url                  = model.Url;
             _FreteCorreiosSettings.CustoAdicionalEnvio  = model.CustoAdicionalEnvio;
-            _FreteCorreiosSettings.IncluirValorDeclarado = model.IncluirValorDeclarado;
+            _FreteCorreiosSettings.IncluirValorDeclarado= model.IncluirValorDeclarado;
             _FreteCorreiosSettings.UtilizaValorMinimo   = model.UtilizaValorMinimo;
             _FreteCorreiosSettings.ValorMinimo = model.ValorMinimo;
             _FreteCorreiosSettings.DiasUteisAdicionais  = model.DiasUteisAdicionais;
@@ -64,7 +64,7 @@ namespace Nop.Plugin.Shipping.FreteCorreios.Controllers
 
             SuccessNotification(_localizationService.GetResource("Admin.Plugins.Saved"));
 
-            return View("~/Plugin.Shipping.FreteCorreios/View/FreteCorreios/Configure.cshtml", model);
+            return View("~/Plugin.Shipping.FreteCorreios/Views/ShippingFreteCorreios/Configure.cshtml", model);
         }
     }
 }
