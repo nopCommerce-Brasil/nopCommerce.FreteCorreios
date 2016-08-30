@@ -40,7 +40,7 @@ namespace Nop.Plugin.Shipping.FreteCorreios.Controllers
                 DiasUteisAdicionais = _FreteCorreiosSettings.DiasUteisAdicionais
             };
 
-            return View("~/Plugin.Shipping.FreteCorreios/Views/ShippingFreteCorreios/Configure.cshtml", model);
+            return View("~/Plugins/Shipping.FreteCorreios/Views/ShippingFreteCorreios/Configure.cshtml", model);
         }
 
         [HttpPost]
@@ -64,7 +64,7 @@ namespace Nop.Plugin.Shipping.FreteCorreios.Controllers
 
             SuccessNotification(_localizationService.GetResource("Admin.Plugins.Saved"));
 
-            return View("~/Plugin.Shipping.FreteCorreios/Views/ShippingFreteCorreios/Configure.cshtml", model);
+            return View("~/Plugins/Shipping.FreteCorreios/Views/ShippingFreteCorreios/Configure.cshtml", model);
         }
     }
 }
