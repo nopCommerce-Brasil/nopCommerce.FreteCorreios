@@ -47,7 +47,7 @@ namespace Nop.Plugin.Shipping.FreteCorreios
 
         public decimal? GetFixedRate(GetShippingOptionRequest getShippingOptionRequest)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public GetShippingOptionResponse GetShippingOptions(GetShippingOptionRequest getShippingOptionRequest)
